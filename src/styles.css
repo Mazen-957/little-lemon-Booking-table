@@ -1,0 +1,104 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #edefee;
+}
+
+.header {
+  background-color: #495e57;
+  color: #f4ce14;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-content {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  min-height: 50vh;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333333;
+  color: white;
+  margin-top: 40px;
+}
+
+/* --- ستايل الفورم الجديدة --- */
+
+/* الكارت اللي شايل الفورم */
+.booking-form {
+  display: grid;
+  max-width: 450px;
+  gap: 15px;
+  margin: 30px auto;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+}
+
+/* عناوين الحقول */
+.booking-form label {
+  font-weight: 600;
+  color: #495e57;
+  margin-bottom: -5px;
+  font-size: 0.95rem;
+}
+
+/* الحقول نفسها */
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* لما تضغط على الحقل عشان تكتب */
+.booking-form input:focus,
+.booking-form select:focus {
+  outline: none;
+  border-color: #495e57;
+  box-shadow: 0px 0px 5px rgba(73, 94, 87, 0.3);
+}
+
+/* زرار الحجز */
+.submit-btn {
+  background-color: #f4ce14;
+  color: #333;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* تأثير الماوس على الزرار */
+.submit-btn:hover:not(:disabled) {
+  background-color: #e5c013;
+  transform: translateY(-2px);
+}
+
+/* شكل الزرار وهو مقفول */
+.submit-btn:disabled {
+  background-color: #e0e0e0;
+  color: #999;
+  cursor: not-allowed;
+  transform: none;
+}
